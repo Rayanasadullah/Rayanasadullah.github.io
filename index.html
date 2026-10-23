@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asadullah Rayan | AI Engineer</title>
+  <meta name="description" content="Portfolio of Asadullah Rayan — Applied AI, Python, Machine Learning">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Matrix Rain Canvas -->
+  <canvas id="matrix-rain"></canvas>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo" aria-label="Home">
+      <span class="nav__bracket">[</span>
+      <span class="nav__name">AR</span>
+      <span class="nav__bracket">]</span>
+    </div>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="nav-links" role="list">
+      <li><a href="#hero" class="nav__link active">Home</a></li>
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#experience" class="nav__link">Experience</a></li>
+      <li><a href="#education" class="nav__link">Education</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__terminal">
+        <div class="terminal__header">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">rayan@matrix:~</span>
+        </div>
+        <div class="terminal__body">
+          <p class="terminal__line">
+            <span class="terminal__prompt">$</span>
+            <span class="typewriter" data-text="cat identity.txt" data-delay="80"></span>
+          </p>
+          <div class="hero__reveal" data-reveal-delay="2000">
+            <h1 class="hero__name glitch" data-text="ASADULLAH RAYAN">ASADULLAH RAYAN</h1>
+            <p class="hero__tagline">
+              <span class="terminal__prompt">&gt;</span>
+              <span class="typewriter" data-text="Applied AI  |  Python  |  Machine Learning" data-delay="40" data-start="2800"></span>
+              <span class="cursor">_</span>
+            </p>
+          </div>
+          <div class="hero__reveal" data-reveal-delay="5500">
+            <p class="terminal__line terminal__line--muted">
+              <span class="terminal__prompt">$</span>
+              <span class="typewriter" data-text="./explore_portfolio.sh" data-delay="60" data-start="5500"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down to about section">
+        <span class="hero__scroll-text">SCROLL DOWN</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title scroll-reveal">
+        <span class="section__number">01.</span>
+        <span class="section__label">ABOUT_ME</span>
+        <span class="section__line"></span>
+      </h2>
+      <div class="about scroll-reveal">
+        <div class="about__terminal">
+          <div class="terminal__header">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__title">profile.sys</span>
+          </div>
+          <div class="terminal__body">
+            <p class="terminal__line"><span class="terminal__prompt">$</span> cat profile.md</p>
+            <br>
+            <p class="about__text">AI student with a foundation in <span class="highlight">Python</span> and <span class="highlight">machine learning</span>, exploring how intelligent systems are built and applied in the real world.</p>
+            <br>
+            <p class="about__text">Comfortable working with data, training models, and understanding the core concepts of modern AI — from <span class="highlight">supervised</span> to <span class="highlight">unsupervised learning</span> and <span class="highlight">neural networks</span>.</p>
+            <br>
+            <p class="about__text">Complemented by a strong background in <span class="highlight">leadership</span>, <span class="highlight">human resource management</span>, and <span class="highlight">cross-cultural communication</span> built through years of professional work in international environments.</p>
+            <br>
+            <p class="about__text about__text--dim">// Eager to grow through hands-on projects and contribute to teams building practical AI solutions.</p>
+          </div>
+        </div>
+        <div class="about__stats">
+          <div class="stat-card scroll-reveal">
+            <span class="stat-card__number" data-count="3">0</span>
+            <span class="stat-card__label">Languages Spoken</span>
+          </div>
+          <div class="stat-card scroll-reveal">
+            <span class="stat-card__number" data-count="10">0</span>
+            <span class="stat-card__label">Years Leadership</span>
+          </div>
+          <div class="stat-card scroll-reveal">
+            <span class="stat-card__number" data-count="3">0</span>
+            <span class="stat-card__label">Organizations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section__title scroll-reveal">
+        <span class="section__number">02.</span>
+        <span class="section__label">EXPERIENCE</span>
+        <span class="section__line"></span>
+      </h2>
+      <div class="timeline">
+
+        <div class="timeline__item scroll-reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <h3 class="timeline__role">Co-founder & HR Manager</h3>
+              <span class="timeline__date">2021 — Present</span>
+            </div>
+            <p class="timeline__company">Dynamic Youth Afghanistan Organization (DYO)</p>
+            <ul class="timeline__list">
+              <li>Developed annual work plans and action plans for the organisation</li>
+              <li>Wrote weekly, monthly, quarterly, and annual progress reports</li>
+              <li>Drafted terms of reference for programme employees and committees</li>
+              <li>Led establishment of: South Asian Youth Festival, Pioneers Debate Competition, Leadership Development Programme, and National Youth Camp</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item scroll-reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <h3 class="timeline__role">Human Resource Manager</h3>
+              <span class="timeline__date">Jun 2015 — Jan 2016</span>
+            </div>
+            <p class="timeline__company">Fadak Electronic Solutions</p>
+            <ul class="timeline__list">
+              <li>Managed recruitment and onboarding of employees</li>
+              <li>Supported business needs through development, engagement, and retention of human capital</li>
+              <li>Oversaw performance appraisal system to drive high performance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item scroll-reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <h3 class="timeline__role">Executive Manager / Editor in Chief</h3>
+              <span class="timeline__date">Jan 2013 — Jul 2013</span>
+            </div>
+            <p class="timeline__company">Nokhabagan-e-Kateb Publication</p>
+            <ul class="timeline__list">
+              <li>Coordinated communication across publication work streams and prepared reports</li>
+              <li>Managed internal finances and initiated procurement paperwork</li>
+              <li>Organised programme events and maintained official correspondence</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section__title scroll-reveal">
+        <span class="section__number">03.</span>
+        <span class="section__label">EDUCATION</span>
+        <span class="section__line"></span>
+      </h2>
+      <div class="edu-grid">
+
+        <div class="edu-card scroll-reveal">
+          <div class="edu-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/>
+            </svg>
+          </div>
+          <span class="edu-card__date">2024 — Present</span>
+          <h3 class="edu-card__title">B.Sc. Applied Artificial Intelligence</h3>
+          <p class="edu-card__detail">Machine Learning, Python, AI Fundamentals, Data Science</p>
+          <div class="edu-card__status edu-card__status--active">
+            <span class="pulse"></span> IN PROGRESS
+          </div>
+        </div>
+
+        <div class="edu-card scroll-reveal">
+          <div class="edu-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/>
+            </svg>
+          </div>
+          <span class="edu-card__date">2016 — 2019</span>
+          <h3 class="edu-card__title">B.A. International Relations</h3>
+          <p class="edu-card__detail">Kateb University — Political Science, International Law, Economics</p>
+          <div class="edu-card__status">COMPLETED</div>
+        </div>
+
+        <div class="edu-card scroll-reveal">
+          <div class="edu-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+            </svg>
+          </div>
+          <span class="edu-card__date">2024</span>
+          <h3 class="edu-card__title">C1 TELC Certificate</h3>
+          <p class="edu-card__detail">German Language — Advanced Proficiency</p>
+          <div class="edu-card__status">CERTIFIED</div>
+        </div>
+
+        <div class="edu-card scroll-reveal">
+          <div class="edu-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M12 15l-3-3h6l-3 3z"/><circle cx="12" cy="12" r="10"/>
+            </svg>
+          </div>
+          <span class="edu-card__date">2019</span>
+          <h3 class="edu-card__title">Leadership Certificate</h3>
+          <p class="edu-card__detail">Afghans for Progressive Thinking (APT)</p>
+          <div class="edu-card__status">CERTIFIED</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section__title scroll-reveal">
+        <span class="section__number">04.</span>
+        <span class="section__label">SKILLS</span>
+        <span class="section__line"></span>
+      </h2>
+      <div class="skills-grid">
+
+        <div class="skill-block scroll-reveal">
+          <h3 class="skill-block__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            Programming
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-block scroll-reveal">
+          <h3 class="skill-block__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            AI / ML
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Supervised Learning</span>
+            <span class="skill-tag">Unsupervised Learning</span>
+            <span class="skill-tag">Neural Networks</span>
+          </div>
+        </div>
+
+        <div class="skill-block scroll-reveal">
+          <h3 class="skill-block__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Computer
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Hardware</span>
+            <span class="skill-tag">Software Applications</span>
+          </div>
+        </div>
+
+        <div class="skill-block scroll-reveal">
+          <h3 class="skill-block__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            Soft Skills
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">HR Management</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Cross-Cultural Awareness</span>
+            <span class="skill-tag">Conflict Resolution</span>
+          </div>
+        </div>
+
+        <div class="skill-block scroll-reveal">
+          <h3 class="skill-block__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--accent">Persian <small>(Native)</small></span>
+            <span class="skill-tag skill-tag--accent">English <small>(Fluent)</small></span>
+            <span class="skill-tag skill-tag--accent">German <small>(C1)</small></span>
+          </div>
+        </div>
+
+        <div class="skill-block scroll-reveal">
+          <h3 class="skill-block__title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4zM9 9h6v6H9z"/></svg>
+            Translation
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">English to Persian / Pashto</span>
+            <span class="skill-tag">Simultaneous</span>
+            <span class="skill-tag">Consecutive</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title scroll-reveal">
+        <span class="section__number">05.</span>
+        <span class="section__label">CONTACT</span>
+        <span class="section__line"></span>
+      </h2>
+      <div class="contact scroll-reveal">
+        <div class="contact__terminal">
+          <div class="terminal__header">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__title">connect.sh</span>
+          </div>
+          <div class="terminal__body">
+            <p class="terminal__line"><span class="terminal__prompt">$</span> ./establish_connection.sh</p>
+            <br>
+            <p class="terminal__line terminal__line--muted">// Ready to collaborate? Let's build something intelligent.</p>
+            <br>
+            <div class="contact__links">
+              <a href="mailto:asadrayan3030@gmail.com" class="contact__link" aria-label="Send email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                <span class="contact__link-text">asadrayan3030@gmail.com</span>
+              </a>
+              <a href="https://github.com/Rayanasadullah" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="GitHub profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span class="contact__link-text">github.com/Rayanasadullah</span>
+              </a>
+              <a href="https://linkedin.com/in/asad-rayan-2aa7ba1b2" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="LinkedIn profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <span class="contact__link-text">LinkedIn Profile</span>
+              </a>
+              <a href="tel:+4917682208536" class="contact__link" aria-label="Phone number">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                <span class="contact__link-text">+49 176 82208536</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        <span class="terminal__prompt">&gt;</span>
+        Designed & Built by <span class="highlight">Asadullah Rayan</span>
+        <span class="footer__year">// 2026</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
