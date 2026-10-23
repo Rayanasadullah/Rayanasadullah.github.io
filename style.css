@@ -877,6 +877,140 @@ img {
 }
 
 /* ============================================================
+   PROJECTS
+   ============================================================ */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  padding: 28px 24px;
+  background: var(--bg-terminal);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s var(--ease-out);
+}
+
+.project-card:hover {
+  border-color: var(--border-active);
+  box-shadow: 0 4px 24px rgba(0, 255, 65, 0.06);
+  transform: translateY(-2px);
+}
+
+.project-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-card__title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.project-card__status {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--matrix-green);
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+  padding: 2px 10px;
+  border: 1px solid var(--border-color);
+  background: var(--matrix-green-subtle);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-card__summary {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.project-card__details {
+  display: grid;
+  gap: 4px;
+  padding-top: 4px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.project-card__details dt {
+  font-size: 0.68rem;
+  color: var(--matrix-green);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 10px;
+}
+
+.project-card__details dt::before {
+  content: '> ';
+  font-weight: 700;
+}
+
+.project-card__details dd {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.project-card__links {
+  margin-top: auto;
+  padding-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-card__link {
+  font-size: 0.78rem;
+  padding: 8px 14px;
+  border: 1px solid var(--border-color);
+  background: rgba(0, 255, 65, 0.02);
+}
+
+.project-card__link:hover {
+  border-color: var(--matrix-green);
+  background: var(--matrix-green-subtle);
+}
+
+.project-card--optional {
+  border-style: dashed;
+}
+
+/* Placeholder text — visible reminder of text to write.
+   Remove the "placeholder" class after replacing the text. */
+.placeholder {
+  color: #ffbd2e !important;
+  font-style: italic;
+  border: 1px dashed rgba(255, 189, 46, 0.5);
+  background: rgba(255, 189, 46, 0.06);
+  padding: 4px 8px;
+  text-shadow: none;
+}
+
+.timeline__confirm {
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.skill-block__note {
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+/* ============================================================
    SCROLL REVEAL ANIMATION
    ============================================================ */
 .scroll-reveal {
@@ -974,6 +1108,10 @@ img {
   }
 
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
